@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+    android:padding="20dp"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/image_slider_pager"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:id="@+id/indicatorsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blueLeson"
+        android:layout_marginBottom="5dp"
+        android:text="Nama Kamu" />
+    <EditText
+        android:background="@drawable/edit_text_border"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="10dp"
+        android:id="@+id/edt_length"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:inputType="text"
+        android:lines="1" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/blueLeson"
+        android:text="Umur Kamu" />
+    <EditText
+        android:background="@drawable/edit_text_border"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="10dp"
+        android:id="@+id/edt_width"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:inputType="numberDecimal"
+        android:lines="1" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/blueLeson"
+        android:text="Tinggi Kamu" />
+    <EditText
+        android:background="@drawable/edit_text_border"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="10dp"
+        android:id="@+id/edt_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:inputType="numberDecimal"
+        android:lines="1" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/blueLeson"
+        android:text="Berat Kamu" />
+    <EditText
+        android:background="@drawable/edit_text_border"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="10dp"
+        android:id="@+id/edt_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:inputType="numberDecimal"
+        android:lines="1" />
+    <Button
+        android:id="@+id/btn_hitung"
+        android:layout_gravity="right"
+        android:background="@drawable/button_rounded"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Hitung"
+        android:textColor="@color/white"
+        />
+
+</LinearLayout>
